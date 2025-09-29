@@ -1,7 +1,12 @@
-#root {
-  max-width: 1280px;
+#root{
+  display:flex;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
+
+table thead{
+  display:flex;
+  width:90vw;
+  flex-direction: row;
+  justify-content: space-around;
+}

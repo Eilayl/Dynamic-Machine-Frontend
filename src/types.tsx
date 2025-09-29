@@ -1,5 +1,8 @@
-export interface Propetie {
+export type Propertie = {
     title: string,
-    type: any,
+    type: "string" | "number" | "boolean",
+    enum?: string[],
+    format?: string
+
 }
 
