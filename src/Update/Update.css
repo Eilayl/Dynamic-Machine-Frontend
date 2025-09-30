@@ -1,4 +1,4 @@
-.create-container {
+.update-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
@@ -7,20 +7,20 @@
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.create-header {
+.update-header {
     text-align: center;
     margin-bottom: 3rem;
     color: white;
 }
 
-.create-header h1 {
+.update-header h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.create-header p {
+.update-header p {
     font-size: 1.1rem;
     opacity: 0.9;
     font-weight: 300;
@@ -118,6 +118,26 @@
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
+.error-message {
+    color: #dc2626;
+    background: #fef2f2;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #fecaca;
+    font-weight: 500;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -132,7 +152,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .create-container {
+    .update-container {
         padding: 1rem;
     }
 
@@ -141,7 +161,7 @@
         border-radius: 15px;
     }
 
-    .create-header h1 {
+    .update-header h1 {
         font-size: 2rem;
     }
 

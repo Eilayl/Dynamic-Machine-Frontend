@@ -1,8 +1,7 @@
-export type Propertie = {
+export type Property = {
     title: string,
-    type: "string" | "number" | "boolean",
+    type: "string" | "number" | "boolean" | "enum" | "integer",
     enum?: string[],
     format?: string
-
 }
 
