@@ -13,7 +13,8 @@ export const Create = () => {
   const CreateMachine = async () => {
     try {
       const response = await axios.post(`${URL}/machine/create`, field)
-      navigate('/');
+      if (response && response.data)
+        navigate('/');
     }
     catch (err: any) {
       console.log("Error:", err);
