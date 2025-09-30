@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 export const Dashboard = () => {
     const [schema, setSchema] = useState({});
-    const [updateSchema, setUpdateSchema] = useState({});
     const navigate = useNavigate();
     const [loading, setLoading] = useState<boolean>(true);
     const [machines, setMachines] = useState<Array<Record<string, any>>>([])
@@ -26,24 +25,8 @@ export const Dashboard = () => {
             setLoading(false);
         }
 
-        const FetchUpdateSchema = async () => {
-            try {
-                setLoading(true);
-                const response = await axios.get(`${URL}/machine/schema/update`, {})
-                if (response && response.data.properties) {
-                    setUpdateSchema(response.data.properties)
-                }
-            }
-            catch (error) {
-                console.log("Error:", error);
-            }
-            setLoading(false);
-        }
-
-
         FetchSchema();
         FetchItems();
-        FetchUpdateSchema()
     }, [])
 
     const FetchItems = async () => {
