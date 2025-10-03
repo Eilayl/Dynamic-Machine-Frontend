@@ -1,7 +1,7 @@
 This is the React (Vite) frontend of the system.
 It renders a dynamic table of machine objects, where the table fields are generated automatically based on the backend schema.
 
-How to Run
+How to Run:
 git clone https://www.github.com/eilayl/Dynamic-Machine-Frontend
 cd Dynamic-Machine-Frontend
 npm install
@@ -18,4 +18,4 @@ Strengthened my skills in building flexible UI components that react to server-s
 Related Repository
 
 To run the full system you also need the backend:
-👉 Dynamic-Machine-Backend
+Dynamic-Machine-Backend -> https://github.com/eilayl/Dynamic-Machine-Backend
